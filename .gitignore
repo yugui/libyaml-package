@@ -1,0 +1,6 @@
+.*.swp
+/prototype
+/postinstall
+/yaml-?.?.?.tar.gz
+/yaml-?.?.?
+/destroot

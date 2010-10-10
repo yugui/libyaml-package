@@ -1,0 +1,9 @@
+PKG=YUGUIlibyaml
+NAME=libyaml - A C library for parsing and emitting YAML.
+ARCH=sparc
+CATEGORY=application
+VERSION=0.1.3
+VENDOR=http://pyyaml.org/wiki/LibYAML
+HOTLINE=on your risk
+EMAIL=on your risk
+DESC=unofficial package of libyaml
