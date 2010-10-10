@@ -39,8 +39,8 @@ task :prototype => :build do
         line = line.sub("#{TMP_DIR}/", '')
         line = line.sub(/([0-7]{4}) \w+ \w+/, '\1 root root')
 
-        if line == "f none lib/libyaml.la 0755 root root\n"
-          f.write "e none lib/libyaml.la 0755 root root\n"
+        if EDITABLE_FILES.any?{|path| line == "f none #{path} 0755 root root\n" }
+          f.write line.sub(/^f/, 'e')
         else
           f.write line
         end
