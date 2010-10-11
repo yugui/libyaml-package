@@ -29,7 +29,7 @@ task :prototype => :build do
   File.open("prototype", "w"){|f|
     f.write <<-EOS.gsub(/^\s+/, '')
       i pkginfo
-      i LICENSE=yaml-#{TARGET_VERSION}/LICENSE
+      i copyright=yaml-#{TARGET_VERSION}/LICENSE
       i postinstall=./postinstall
     EOS
 
